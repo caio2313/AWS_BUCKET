@@ -27,7 +27,7 @@ Before running this project, ensure you have:
 
 ## 💻 How to Run
 
-1.  **Clone the repository:**
+1.  **https://github.com/caio2313/AWS_BUCKET**
     ```bash
     git clone [https://github.com/YOUR_USERNAME/AWS_BUCKET.git](https://github.com/YOUR_USERNAME/AWS_BUCKET.git)
     cd AWS_BUCKET
