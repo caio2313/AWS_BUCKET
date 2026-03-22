@@ -20,3 +20,20 @@ resource "aws_s3_bucket" "my_bucket" {
     ManagedBy   = "Terraform"
   }
 }
+
+resource "aws_s3_bucket_versioning" "versioning_example" {
+  bucket = aws_s3_bucket.data_lake.id
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
+
+resource "aws_s3_object" "raw_folder" {
+  bucket = aws_s3_bucket.data_lake.id
+  key    = "raw/"
+}
+
+resource "aws_s3_object" "refined_folder" {
+  bucket = aws_s3_bucket.data_lake.id
+  key    = "refined/"
+}
